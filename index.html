@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小兔鲜 - 新鲜生活，从这里开始</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="小兔鲜">
+                    </a>
+                </div>
+                <div class="header-center">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                            <li class="nav-item"><a href="products.html" class="nav-link">商品分类</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">新品上市</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">限时抢购</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">品牌专区</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="搜索商品">
+                        <button class="search-btn">
+                            <i class="iconfont icon-search"></i>
+                        </button>
+                    </div>
+                    <div class="user-actions">
+                        <a href="login.html" class="user-action">
+                            <i class="iconfont icon-mobile-phone"></i>
+                            <span>登录</span>
+                        </a>
+                        <a href="#" class="user-action">
+                            <i class="iconfont icon-favorites-fill"></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="cart.html" class="user-action cart">
+                            <i class="iconfont icon-cart-full"></i>
+                            <span>购物车</span>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 移动端汉堡菜单 -->
+                <div class="mobile-menu-btn">
+                    <i class="iconfont icon-menu"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-logo">
+                    <img src="images/logo.png" alt="小兔鲜">
+                </a>
+                <div class="mobile-menu-close">
+                    <i class="iconfont icon-close"></i>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">首页</a></li>
+                    <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">商品分类</a></li>
+                    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">新品上市</a></li>
+                    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">限时抢购</a></li>
+                    <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">品牌专区</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-search">
+                <input type="text" class="mobile-search-input" placeholder="搜索商品">
+                <button class="mobile-search-btn">
+                    <i class="iconfont icon-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-wrapper">
+                <div class="banner-item active">
+                    <img src="uploads/banner1.png" alt="banner1">
+                </div>
+                <div class="banner-item">
+                    <img src="uploads/fresh_left.png" alt="banner2">
+                </div>
+                <div class="banner-item">
+                    <img src="uploads/home_left.png" alt="banner3">
+                </div>
+            </div>
+            <div class="banner-controls">
+                <div class="banner-prev">
+                    <i class="iconfont icon-arrow-left-bold"></i>
+                </div>
+                <div class="banner-next">
+                    <i class="iconfont icon-arrow-right-bold"></i>
+                </div>
+            </div>
+            <div class="banner-indicators">
+                <div class="banner-indicator active"></div>
+                <div class="banner-indicator"></div>
+                <div class="banner-indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品分类 -->
+    <section class="category">
+        <div class="container">
+            <div class="category-list">
+                <a href="#" class="category-item">
+                    <img src="uploads/fresh1.png" alt="新鲜水果">
+                    <span>新鲜水果</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="uploads/home1.png" alt="家居生活">
+                    <span>家居生活</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="uploads/kitchen1.png" alt="厨房用品">
+                    <span>厨房用品</span>
+                </a>
+                <a href="#" class="category-item">
+                    <img src="uploads/clothes1.png" alt="服装服饰">
+                    <span>服装服饰</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门商品 -->
+    <section class="hot-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>热门商品</h2>
+                <a href="products.html" class="more">查看更多 <i class="iconfont icon-arrow-right-bold"></i></a>
+            </div>
+            <div class="products-grid">
+                <!-- 商品项 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="uploads/goods1.png" alt="KN95级莫兰迪色防护口罩">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">KN95级莫兰迪色防护口罩</h3>
+                        <div class="product-price">
+                            <span class="price">¥79</span>
+                            <span class="original-price">¥99</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="iconfont icon-cart-full"></i>
+                                加入购物车
+                            </button>
+                            <button class="add-to-fav">
+                                <i class="iconfont icon-favorites-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 商品项 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="uploads/goods2.png" alt="紫檀外独板三层普洱茶盒">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">紫檀外独板三层普洱茶盒</h3>
+                        <div class="product-price">
+                            <span class="price">¥566</span>
+                            <span class="original-price">¥699</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="iconfont icon-cart-full"></i>
+                                加入购物车
+                            </button>
+                            <button class="add-to-fav">
+                                <i class="iconfont icon-favorites-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 商品项 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="uploads/goods3.png" alt="法拉蒙高颜值记事本可定制">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">法拉蒙高颜值记事本可定制</h3>
+                        <div class="product-price">
+                            <span class="price">¥58</span>
+                            <span class="original-price">¥78</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="iconfont icon-cart-full"></i>
+                                加入购物车
+                            </button>
+                            <button class="add-to-fav">
+                                <i class="iconfont icon-favorites-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 商品项 -->
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="uploads/goods4.png" alt="科技布布艺沙发">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">科技布布艺沙发</h3>
+                        <div class="product-price">
+                            <span class="price">¥3579</span>
+                            <span class="original-price">¥4299</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="iconfont icon-cart-full"></i>
+                                加入购物车
+                            </button>
+                            <button class="add-to-fav">
+                                <i class="iconfont icon-favorites-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐商品 -->
+    <section class="recommend-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>为您推荐</h2>
+                <a href="products.html" class="more">查看更多 <i class="iconfont icon-arrow-right-bold"></i></a>
+            </div>
+            <div class="waterfall">
+                <!-- 瀑布流商品项 -->
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/recommend1.png" alt="推荐商品1">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">有机蔬菜礼盒</h3>
+                        <div class="product-price">
+                            <span class="price">¥128</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/recommend2.png" alt="推荐商品2">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">智能扫地机器人</h3>
+                        <div class="product-price">
+                            <span class="price">¥1599</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/recommend3.png" alt="推荐商品3">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">纯棉床上四件套</h3>
+                        <div class="product-price">
+                            <span class="price">¥399</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/recommend4.png" alt="推荐商品4">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">进口红酒礼盒</h3>
+                        <div class="product-price">
+                            <span class="price">¥499</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/hot1.png" alt="推荐商品5">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">夏季清凉套装</h3>
+                        <div class="product-price">
+                            <span class="price">¥259</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="waterfall-item">
+                    <div class="product-image">
+                        <img src="uploads/hot2.png" alt="推荐商品6">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">运动健身器材</h3>
+                        <div class="product-price">
+                            <span class="price">¥899</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="小兔鲜">
+                    </div>
+                    <div class="footer-desc">
+                        小兔鲜是一家专注于新鲜生活的电商平台，提供优质的商品和服务，让您的生活更加美好。
+                    </div>
+                    <div class="footer-contact">
+                        <a href="#" class="contact-item">
+                            <i class="iconfont icon-mobile-phone"></i>
+                            <span>400-123-4567</span>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <i class="iconfont icon-customer-service"></i>
+                            <span>在线客服</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">快速链接</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">商品分类</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">新鲜水果</a></li>
+                        <li><a href="#">家居生活</a></li>
+                        <li><a href="#">厨房用品</a></li>
+                        <li><a href="#">服装服饰</a></li>
+                        <li><a href="#">数码家电</a></li>
+                    </ul>
+                </div>
+                <div class="footer-app">
+                    <h3 class="footer-link-title">下载APP</h3>
+                    <div class="app-qr">
+                        <img src="images/app.png" alt="APP二维码">
+                    </div>
+                    <div class="app-links">
+                        <a href="#">苹果下载</a>
+                        <a href="#">安卓下载</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2023 小兔鲜电商平台 版权所有
+                </div>
+                <div class="footer-payment">
+                    <img src="images/wechat.png" alt="微信支付">
+                    <!-- 可以添加更多支付方式图标 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 小兔鲜电商</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="小兔鲜" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">商品</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">分类</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">促销</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">品牌</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="搜索商品">
+                        <button class="search-btn">
+                            <i class="iconfont icon-search"></i>
+                        </button>
+                    </div>
+                    <div class="user-menu">
+                        <a href="login.html" class="user-btn active">
+                            <i class="iconfont icon-user"></i>
+                        </a>
+                        <a href="cart.html" class="cart-btn">
+                            <i class="iconfont icon-cart-full"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 移动端菜单按钮 -->
+                <div class="mobile-menu-btn">
+                    <i class="iconfont icon-menu"></i>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-inner">
+                <button class="mobile-menu-close">
+                    <i class="iconfont icon-close"></i>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">首页</a></li>
+                        <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">商品</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">分类</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">促销</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">品牌</a></li>
+                        <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link">登录</a></li>
+                        <li class="mobile-nav-item"><a href="cart.html" class="mobile-nav-link">购物车</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面主体 -->
+    <main class="main">
+        <!-- 登录页面头部 -->
+        <section class="login-header">
+            <div class="container">
+                <h1 class="page-title">用户登录</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> &gt; <span>登录</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 登录表单 -->
+        <section class="login-section">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-form-container">
+                        <h2 class="form-title">欢迎回来</h2>
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="username" class="form-label">用户名</label>
+                                <div class="input-wrapper">
+                                    <i class="iconfont icon-user"></i>
+                                    <input type="text" id="username" name="username" class="form-input"
+                                        placeholder="请输入用户名" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password" class="form-label">密码</label>
+                                <div class="input-wrapper">
+                                    <i class="iconfont icon-lock"></i>
+                                    <input type="password" id="password" name="password" class="form-input"
+                                        placeholder="请输入密码" required>
+                                    <button type="button" class="toggle-password">
+                                        <i class="iconfont icon-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="remember" class="form-checkbox">
+                                    <span class="checkbox-text">记住我</span>
+                                </label>
+                                <a href="#" class="forgot-password">忘记密码？</a>
+                            </div>
+
+                            <button type="submit" class="login-btn">登录</button>
+                        </form>
+
+                        <div class="register-link">
+                            <span>还没有账号？</span>
+                            <a href="#" class="register-btn">立即注册</a>
+                        </div>
+                    </div>
+
+                    <div class="login-banner">
+                        <img src="images/login-banner.jpg" alt="登录" class="banner-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="小兔鲜">
+                    </div>
+                    <p class="footer-desc">小兔鲜电商致力于为您提供新鲜、优质的食品，让您的生活更加健康美味。</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="iconfont icon-phone"></i>
+                            <span>400-123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-email"></i>
+                            <span>service@xiaotuxian.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-location"></i>
+                            <span>北京市朝阳区某某路123号</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-customer-service"></i>
+                            <span>在线客服</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">快速链接</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">商品分类</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">新鲜水果</a></li>
+                        <li><a href="#">家居生活</a></li>
+                        <li><a href="#">厨房用品</a></li>
+                        <li><a href="#">服装服饰</a></li>
+                        <li><a href="#">数码家电</a></li>
+                    </ul>
+                </div>
+                <div class="footer-app">
+                    <h3 class="footer-link-title">下载APP</h3>
+                    <div class="app-qr">
+                        <img src="images/app.png" alt="APP二维码">
+                    </div>
+                    <div class="app-links">
+                        <a href="#">苹果下载</a>
+                        <a href="#">安卓下载</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2023 小兔鲜电商平台 版权所有
+                </div>
+                <div class="footer-payment">
+                    <img src="images/wechat.png" alt="微信支付">
+                    <!-- 可以添加更多支付方式图标 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // 登录表单相关功能
+        document.addEventListener('DOMContentLoaded', function () {
+            // 密码显示/隐藏切换
+            const togglePasswordBtn = document.querySelector('.toggle-password');
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = togglePasswordBtn.querySelector('i');
+
+            if (togglePasswordBtn) {
+                togglePasswordBtn.addEventListener('click', function () {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+
+                    // 切换图标
+                    if (type === 'password') {
+                        eyeIcon.className = 'iconfont icon-eye';
+                    } else {
+                        eyeIcon.className = 'iconfont icon-eye-close';
+                    }
+                });
+            }
+
+            // 忘记密码链接点击事件
+            const forgotPasswordLink = document.querySelector('.forgot-password');
+            if (forgotPasswordLink) {
+                forgotPasswordLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    showNotification('忘记密码功能开发中...');
+                });
+            }
+
+            // 注册按钮点击事件
+            const registerBtn = document.querySelector('.register-btn');
+            if (registerBtn) {
+                registerBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    showNotification('注册功能开发中...');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

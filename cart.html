@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - 小兔鲜电商</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="小兔鲜" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">商品</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">分类</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">促销</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">品牌</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="搜索商品">
+                        <button class="search-btn">
+                            <i class="iconfont icon-search"></i>
+                        </button>
+                    </div>
+                    <div class="user-menu">
+                        <a href="login.html" class="user-btn">
+                            <i class="iconfont icon-user"></i>
+                        </a>
+                        <a href="cart.html" class="cart-btn">
+                            <i class="iconfont icon-cart-full"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- 移动端菜单按钮 -->
+                <div class="mobile-menu-btn">
+                    <i class="iconfont icon-menu"></i>
+                </div>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-inner">
+                <button class="mobile-menu-close">
+                    <i class="iconfont icon-close"></i>
+                </button>
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">首页</a></li>
+                        <li class="mobile-nav-item"><a href="products.html" class="mobile-nav-link">商品</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">分类</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">促销</a></li>
+                        <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">品牌</a></li>
+                        <li class="mobile-nav-item"><a href="login.html" class="mobile-nav-link">登录</a></li>
+                        <li class="mobile-nav-item"><a href="cart.html" class="mobile-nav-link">购物车</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面主体 -->
+    <main class="main">
+        <!-- 购物车页面头部 -->
+        <section class="cart-header">
+            <div class="container">
+                <h1 class="page-title">我的购物车</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">首页</a> &gt; <span>购物车</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 购物车内容 -->
+        <section class="cart-section">
+            <div class="container">
+                <!-- 购物车商品列表 -->
+                <div class="cart-items">
+                    <!-- 购物车商品会通过JavaScript动态渲染 -->
+                    <p style="text-align: center; padding: 50px; color: #999;">购物车是空的，快去添加商品吧！</p>
+                </div>
+
+                <!-- 购物车摘要 -->
+                <div class="cart-summary">
+                    <div class="summary-title">购物车摘要</div>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <span class="summary-label">商品总价:</span>
+                            <span class="summary-value">¥0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">配送费:</span>
+                            <span class="summary-value">¥10.00</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span class="summary-label">应付金额:</span>
+                            <span class="summary-value total-price">¥0.00</span>
+                        </div>
+                        <button class="checkout-btn">去结算</button>
+                        <button class="continue-shopping">继续购物</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="小兔鲜">
+                    </div>
+                    <p class="footer-desc">小兔鲜电商致力于为您提供新鲜、优质的食品，让您的生活更加健康美味。</p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="iconfont icon-phone"></i>
+                            <span>400-123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-email"></i>
+                            <span>service@xiaotuxian.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-location"></i>
+                            <span>北京市朝阳区某某路123号</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="iconfont icon-customer-service"></i>
+                            <span>在线客服</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">快速链接</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-link-title">商品分类</h3>
+                    <ul class="footer-link-list">
+                        <li><a href="#">新鲜水果</a></li>
+                        <li><a href="#">家居生活</a></li>
+                        <li><a href="#">厨房用品</a></li>
+                        <li><a href="#">服装服饰</a></li>
+                        <li><a href="#">数码家电</a></li>
+                    </ul>
+                </div>
+                <div class="footer-app">
+                    <h3 class="footer-link-title">下载APP</h3>
+                    <div class="app-qr">
+                        <img src="images/app.png" alt="APP二维码">
+                    </div>
+                    <div class="app-links">
+                        <a href="#">苹果下载</a>
+                        <a href="#">安卓下载</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2023 小兔鲜电商平台 版权所有
+                </div>
+                <div class="footer-payment">
+                    <img src="images/wechat.png" alt="微信支付">
+                    <!-- 可以添加更多支付方式图标 -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // 继续购物按钮点击事件
+        document.addEventListener('DOMContentLoaded', function () {
+            const continueShoppingBtn = document.querySelector('.continue-shopping');
+            if (continueShoppingBtn) {
+                continueShoppingBtn.addEventListener('click', function () {
+                    window.location.href = 'products.html';
+                });
+            }
+
+            // 去结算按钮点击事件
+            const checkoutBtn = document.querySelector('.checkout-btn');
+            if (checkoutBtn) {
+                checkoutBtn.addEventListener('click', function () {
+                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    if (cart.length === 0) {
+                        showNotification('购物车是空的，无法结算');
+                    } else {
+                        showNotification('结算功能开发中...');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
